@@ -122,6 +122,7 @@ public class ToDoList implements ActionListener {
 			String tasks = "";
 			for (int i = 0; i < currentTasks.size(); i++) {
 				tasks += currentTasks.get(i) + "\n";
+				JOptionPane.showMessageDialog(null, "Current list saved");
 			}
 			FileWriter fw;
 			try {
@@ -136,6 +137,7 @@ public class ToDoList implements ActionListener {
 		}
 		if (e.getSource() == loadList) {
 			loadList();
+			JOptionPane.showMessageDialog(null, "Saved list loaded");
 
 		}
 
